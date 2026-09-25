@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A350 Flight</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="loading">Loading A350… <span id="loading-pct">0%</span></div>
+    <div id="hud">
+      <div class="row"><b>SPD</b> <span id="hud-spd">0</span> kt</div>
+      <div class="row"><b>ALT</b> <span id="hud-alt">0</span> ft</div>
+      <div class="row"><b>V/S</b> <span id="hud-vs">0</span> fpm</div>
+      <div class="row"><b>THR</b> <span id="hud-thr">0</span>%</div>
+      <div class="row"><b>FLAP</b> <span id="hud-flap">0</span></div>
+      <div class="row"><b>GEAR</b> <span id="hud-gear">DOWN</span></div>
+      <div class="row" id="hud-warn"></div>
+    </div>
+    <div id="help">
+      <b>W/S</b> pitch (S = nose up) · <b>A/D</b> roll · <b>Q/E</b> rudder / steer<br />
+      <b>R/F</b> throttle · <b>V</b> flaps · <b>G</b> gear · <b>B</b> brakes + spoilers<br />
+      <b>Drag</b> look around · <b>Wheel</b> zoom · <b>C</b> chase / free camera · <b>Enter</b> reset · <b>H</b> hide help
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

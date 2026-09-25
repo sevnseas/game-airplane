@@ -1,0 +1,20 @@
+html, body { margin: 0; height: 100%; overflow: hidden; background: #9cc4e4; }
+canvas { display: block; }
+#loading {
+  position: fixed; inset: 0; display: grid; place-items: center;
+  font: 600 20px system-ui, sans-serif; color: #fff; background: #6f9fcb; z-index: 10;
+}
+#hud {
+  position: fixed; left: 16px; top: 16px; padding: 10px 14px; border-radius: 8px;
+  font: 14px ui-monospace, monospace; color: #e8fff0; background: rgba(8, 20, 30, 0.45);
+  min-width: 140px; pointer-events: none;
+}
+#hud .row { line-height: 1.5; }
+#hud b { display: inline-block; width: 44px; color: #8fe3b0; font-weight: 600; }
+#hud-warn { color: #ffcf5a; font-weight: 700; }
+#help {
+  position: fixed; left: 50%; bottom: 14px; transform: translateX(-50%);
+  padding: 8px 14px; border-radius: 8px; text-align: center;
+  font: 13px system-ui, sans-serif; color: #fff; background: rgba(8, 20, 30, 0.45);
+  pointer-events: none; line-height: 1.6;
+}
